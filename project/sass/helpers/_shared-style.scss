@@ -1,0 +1,445 @@
+* {
+    box-sizing: border-box;
+    font-family: $Helvetica-Neue;
+}
+
+body {
+    padding-top: 100px;
+    @media #{$mobile} {
+        padding-top: 57px;
+    }
+}
+
+// Select2
+select {
+    display: none !important;
+}
+.select2-container--default {
+    .select2-selection--single {
+        background: none;
+        border: none;
+        display: flex;
+        justify-content: center;
+    }
+    .select2-selection__rendered {
+        font: normal normal 500 12px/14px $Helvetica-Neue;
+        max-width: 100px;
+        padding: 0 21px 0 0!important;
+        color: $black-color !important;
+    }
+    .select2-selection__arrow {
+        position: static !important;
+        margin-left: 20px;
+    }
+    .select2-results__option--highlighted.select2-results__option--selectable {
+        background-color: $black-color;
+    }
+}
+.select2-results__option {
+    padding: 3px;
+    font-size: 14px;
+}
+.select2-search--dropdown {
+    .select2-search__field {
+        padding: 2px 4px;
+        font-size: 14px;
+    }
+}
+// some modified in the select box
+.select2-container--default .select2-selection--single {
+    .select2-selection__arrow {
+        b {
+            border-color: #192C78 transparent transparent transparent;
+            border-width: 6px 6px 0 6px;
+            margin: -3px 13px 0 0;
+            right: 0;
+            left: auto;
+            top: 50%;
+        }
+    }
+}
+.select2-container--default.select2-container--open {
+    .select2-selection--single {
+        .select2-selection__arrow {
+            b {
+                border-color: transparent transparent #192C78 transparent;
+                border-width: 0px 6px 6px 6px;
+            }
+        }
+    }
+}
+
+// Enhance form fields
+input:focus , button:focus, textarea:focus {
+    outline: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+textarea {
+    resize: none;
+}
+
+
+// RateYou Plugin
+.jq-ry-container {
+    width: 112px !important;
+    &.special-rate {
+        width: 160px !important;
+    }
+    .jq-ry-group-wrapper {
+        .jq-ry-group {
+            svg {
+                margin-right: 8px;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+// Slick Plugin
+.slick-portfolio {
+    padding-right: 120px;
+    padding-left: 120px;
+    @media #{$mobile} {
+        padding: 0;
+    }
+    &.services-slick {
+        padding-right: 190px;
+        padding-left: 70px;
+        position: relative;
+        @media #{$mobile} {
+            padding: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 99;
+        &:first-of-type {
+            left: 0;
+        }
+        &:last-of-type {
+            right: 0;
+        }
+        &.slick-disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+    .slick-list {
+        .slick-track {
+            .slick-slide {
+                height: 320px;
+                border-radius: 13px;
+                display: flex;
+                justify-content: center;
+                img {
+                    height: 100%;
+                    width: 248px;
+                    max-width: 248px;
+                    border-radius: 13px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+
+// Scrollbar
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(148, 148, 148); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: $main-color; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba($main-color, 0.7); 
+}
+
+// Anchors
+a, a:hover {
+    text-decoration: none;
+}
+
+// Main label
+.main-label {
+    color: #1F3615;
+    margin-bottom: 19px;
+}
+
+// Radio Field
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: $black-color;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 19px;
+    height: 19px;
+    background: $main-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+// Scroll Top Button
+.homepage-scroll-up {
+    width: 48px;
+    height: 48px;
+    background-color: $main-color;
+    border-radius: 50%;
+    position: absolute;
+    right: 33px;
+    bottom: 73px;
+    @media #{$mobile} {
+        display: none !important;
+    }
+    img {
+        padding-top: 5px;
+    }
+}
+
+
+// stayle Package Section
+.package {
+    background-color: $light-white-color;
+    padding-top: 19px;
+    padding-bottom: 114px;
+    .h-package {
+        font-size: 20px;
+        margin-bottom: 26px;
+    }
+    .package-card {
+        margin-bottom: 55px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        .card-content {
+            background-color: $white-color;
+            padding: 14px;
+            min-height: 430px;
+            border-radius: 12px;
+            .title-card {
+                .header-title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 27px;
+                    span {
+                        color: $gray-color;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    button {
+                        background-color: $main-color;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        @extend %border-none;
+                    }
+                }
+                .footer-title {
+                    margin-bottom: 27px;
+                    span {
+                        &:first-of-type {
+                            font-weight: bold;
+                            font-size: 17px;
+                            margin-right: 46px;
+                        }
+                        &:last-of-type {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .desc-card {
+                min-height: 219px;
+                margin-bottom: 19px;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: center;
+                li {
+                    margin-top: 20px;
+                    width: 100%;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                    div {
+                        width: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        span {
+                            font-size: 17px;
+                            font-weight: bold;
+                        }
+                    }
+                    span {
+                        &:last-child {
+                            display: block;
+                            margin-top: 12px;
+                            opacity: .41;
+                            font-size: 14px;
+                        }
+                    }
+                    @media #{$ipadPro} {
+                        margin-top: 1px;
+                    }
+                }
+            }
+            .total-card {
+                position: relative;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                .price {
+                    &:first-of-type {
+                        font-weight: bold;
+                        font-size: 17px;
+                    }
+                }
+                div {
+                    margin-top: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    span {
+                        border-radius: 5px;
+                        background-color: #E840C110;
+                        color: $main-color;
+                        padding: 13px 22px;
+                        @media #{$ipadPro} {
+                            padding: 13px;
+                        }
+                    }
+                    button {
+                        padding: 11px 60px;
+                        cursor: pointer;
+                        @media #{$ipadPro} {
+                            padding: 11px 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.what-is {
+    font-size: 12px;
+    background-color: #FBFBFB;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    right: -135px;
+    max-width: 180px;
+    height: 65px;
+    color: #B7B7B7;
+    margin-top: 10px;
+    border-radius: 8px;
+    &:after {
+        content: '';
+        position: absolute;
+        top: -14px;
+        left: 30px;
+        border-width: 7px;
+        border-style: solid;
+        border-color: transparent transparent #FBFBFB transparent;
+    }
+}
+
+// Breif Icon
+.brief-wrapper {
+    position: relative;
+}
+.breif-text {
+    display: none;
+    position: absolute !important;
+    top: 27px !important;
+    left: 0 !important;
+    background-color: $white-color;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    font: normal normal 500 12px/14px $Helvetica-Neue;
+    color: $gray-color;
+    padding: 10px;
+    min-width: 182px;
+    text-align: center;
+    p {
+        margin: 0;
+    }
+    &:before {
+        content: "";
+        position: relative;
+        display: block;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid $white-color;
+        position: absolute;
+        top: -7px;
+        left: 15px;
+    }
+}
+.brief-wrapper {
+    &:hover {
+        .breif-text {
+            display: block;
+        }
+    }
+}

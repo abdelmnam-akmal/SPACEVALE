@@ -1,0 +1,37 @@
+.book-service {
+    .form-book {
+        .date-time {
+            div {
+                input {
+                    margin-right: 17px;
+                    @media #{$mobile} {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .where {
+            div {
+                input {
+                    margin-left: 42px;
+                    margin-right: 0;
+                }
+            }
+        }
+        .service-desc {
+            div {
+                textarea {
+                    margin-right: 0;
+                    margin-left: 68px;
+                    @media #{$minMaxSmall} {
+                        margin-right: 0;
+                    }
+                    @media #{$maxSmallMobile} {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+

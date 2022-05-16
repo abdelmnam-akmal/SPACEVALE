@@ -1,0 +1,27 @@
+.hall-package,
+.avilable {
+    h5 {
+        @media #{$mobile} {
+            padding-right: 40px;
+            padding-left: 0;
+        }
+        img {
+            margin-right: 15px;
+            margin-left: 0;
+        }
+    }
+    .package-content {
+        .input-contain {
+            div {
+                a {
+                    left: 25px;
+                    right: auto;
+                    img {
+                        margin-left: 0;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

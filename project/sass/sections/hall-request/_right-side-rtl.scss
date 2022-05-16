@@ -1,0 +1,36 @@
+.hall-request__right {
+    .date-time {
+        span {
+            &:not(:last-child) {
+                margin-left: 12px;
+                margin-right: 0;
+            }
+        }
+        .time-label {
+            > div {
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-left: 93px;
+                }
+            }
+        }
+    }
+}
+.hr-actions {
+    a {
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-left: 40px;
+            @media #{$mobile} {
+                margin-right: 0;
+                margin-left: 0;
+            }
+        }
+        &:first-child {
+            @media #{$mobile} {
+                margin-left: 12px !important;
+                margin-right: 0 !important;
+            }
+        }
+    }
+}

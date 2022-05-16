@@ -1,0 +1,104 @@
+body {
+    text-align: right;
+}
+
+// Select2
+.select2-container--default {
+    .select2-selection__rendered {
+        padding: 0 0 0 21px!important;
+    }
+    .select2-selection__arrow {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
+.select2-results__option {
+    text-align: right;
+}
+// some modified in the select box
+.select2-container--default .select2-selection--single {
+    .select2-selection__arrow {
+        b {
+            margin: -3px 0 0 13px;
+            right: auto;
+            left: 0;
+        }
+    }
+}
+
+// Slick Plugin
+.slick-portfolio {
+    &.services-slick {
+        padding-left: 190px;
+        padding-right: 70px;
+        @media #{$mobile} {
+            padding: 0;
+        }
+    }
+}
+
+// Radio Field
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    left: auto;
+    right: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    padding-left: 0;
+    padding-right: 28px;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    right: 0;
+    left: auto;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    left: auto;
+    right: 0;
+}
+
+// Scroll Top Button
+.homepage-scroll-up {
+    right: auto;
+    left: 33px;
+}
+
+// style Package Section
+.package {
+    .package-card {
+        .card-content {
+            .title-card {
+                .footer-title {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        &:first-of-type {
+                            margin-right: 0;
+                            margin-left: 46px;
+                        }
+                        &:last-of-type {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .desc-card {
+                padding-right: 0;
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+// Breif Icon
+.breif-text {
+    right: 0 !important;
+    left: auto !important;
+    &:before {
+        left: auto;
+        right: 15px;
+    }
+}

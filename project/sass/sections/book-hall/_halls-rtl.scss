@@ -1,0 +1,74 @@
+.halls {
+    .hall-photos {
+        .hall-photos-images {
+            margin-right: 0;
+            margin-left: 56px;
+            .image-container {
+                &:last-of-type {
+                    margin-right: 5px;
+                    margin-left: 0;
+                    div {
+                        &:nth-of-type(odd) {
+                            margin-right: 0;
+                            margin-left: 5px;
+                        }
+                        &.overlay-container {
+                            .overlay {
+                                left: -10px;
+                                width: calc(100% + 5px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hall-info {
+        div {
+            .h-hall {
+                span {
+                    &:first-of-type {
+                        margin-left: 0;
+                        margin-right: 20px; 
+                    }
+                    &:last-of-type {
+                        margin-left: 0;
+                        margin-right: 20px;
+                    }
+                }
+            }
+            ul {
+                padding-right: 0;
+                li {
+                    .type-hall {
+                        margin-right: 0;
+                        margin-left: 20px;
+                    }
+                    div {
+                        span {
+                            margin-right: 0;
+                            margin-left: 20px;
+                            &:last-of-type {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                    &:last-of-type {
+                        div {
+                            .tax-content {
+                                div {
+                                    .tax-btn {
+                                        img {
+                                            margin-left: 0;
+                                            margin-right: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

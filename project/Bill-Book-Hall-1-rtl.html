@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title> Bill-Book-Hall-1 - AR </title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="css/slick.css" />
+
+    <!-- Select2 -->
+    <link rel="stylesheet" href="css/select2.min.css" />
+
+    <!-- Style file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Style RTL file -->
+    <link rel="stylesheet" href="css/style-rtl.css" />
+</head>
+
+<body>
+
+    <!-- START :: Navbar -->
+    <nav class="main-navbar white-navbar fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 d-none d-lg-block">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="main-logo">
+                                <img src="./images/main-logo.png" alt="SPACEVALE" title="SPACEVALE" />
+                            </a>
+                        </div> <!-- END :: COL -->
+                        <div class="col">
+                            <form class="search-main-form d-flex align-items-center justify-content-between">
+                                <div class="form-group">
+                                    <select name="type" class="form-control">
+                                        <option> Type </option>
+                                        <option value="wedding"> wedding </option>
+                                        <option value="part"> part </option>
+                                        <option value="event"> event </option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select name="where" class="form-control">
+                                        <option> Where </option>
+                                        <option value="Cairo"> Cairo </option>
+                                        <option value="Mansoura"> Mansoura </option>
+                                        <option value="Alex"> Alex </option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select name="when" class="form-control">
+                                        <option> When </option>
+                                        <option value="Sunday"> Sunday </option>
+                                        <option value="Monday"> Monday </option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-light" type="submit">
+                                        <img src="./images/search-icon.svg" />
+                                    </button>
+                                </div>
+                            </form>
+                        </div> <!-- END :: COL -->
+                    </div> <!-- END :: ROW -->
+                </div> <!-- END :: COL -->
+                <div class="col-12 col-lg-6">
+                    <div class="navbar-actions d-flex align-items-center justify-content-between">
+                        <div class="your-links">
+                            <a href="signin-1-rtl.html" class="black-btn"> ADD YOUR SPACE </a>
+                            <a href="#" class="black-btn"> ADD YOUR SERVES </a>
+                        </div>
+                        <a href="#" class="user-profile-link">
+                            <img src="./images/user-profile-icon.svg" alt="User Profile" />
+                        </a>
+                    </div>
+                </div> <!-- END :: COL -->
+            </div> <!-- END :: ROW -->
+        </div>
+    </nav>
+    <!-- END :: Navbar -->
+
+    <!-- START :: Bill-book-hall -->
+    <div class="Bill-book-hall">
+        <div class="container">
+            <!-- START :: Bill Book -->
+            <div class="bill-book">
+                <ul class="list-unstyled list-payment">
+                    <li class="list-units">
+                        <h4 class="unit-title special-title"> Bill Book Hall 1 </h4>
+                        <div class="unit-desc special-desc">
+                            <span class="unit-text">200 People</span>
+                            <span class="unit-number">= 4000 egp</span>
+                        </div>
+                    </li>
+                    <li class="list-units">
+                        <h5 class="unit-title font-weight-bold">Dessert</h5>
+                        <div class="unit-desc empty_item">
+                            <!-- Please add this button if you want to make the user remove one of bill list items  -->
+                            <button class="cancle-btn">
+                                <img src="images/Bill-book-hall/close.svg" alt="">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-units">
+                        <h5 class="unit-title font-weight-bold">Drink</h5>
+                        <div class="unit-desc empty_item">
+                            <!-- Please add this button if you want to make the user remove one of bill list items  -->
+                            <button class="cancle-btn">
+                                <img src="images/Bill-book-hall/close.svg" alt="">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-units">
+                        <h5 class="unit-title font-weight-bold">Meal</h5>
+                        <div class="unit-desc empty_item">
+                            <!-- Please add this button if you want to make the user remove one of bill list items  -->
+                            <button class="cancle-btn">
+                                <img src="images/Bill-book-hall/close.svg" alt="">
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="total-payment">
+                    <h5 class="unit-title font-weight-bold">Total</h5>
+                    <div class="unit-desc total text-center">4000 egp</div>
+                </div>
+
+                <section class="break"></section><!-- Break -->
+
+                <div class="confirmation">
+                    <button class="main-btn btn">Confirmation And Payment</button>
+                </div>
+            </div>
+            <!-- END :: Bill Book -->
+            <!-- START :: Form -->
+            <form>
+                <div class="form-group date-time">
+                    <div>
+                        <label class="d-block h-date-time font-weight-bold custom-label">Date & Time</label>
+                        <select name="start-date" class="date-and-time">
+                            <option> Start Date </option>
+                            <option value="Test1"> Test 1 </option>
+                            <option value="Test2"> Test 2 </option>
+                            <option value="Test3"> Test 3 </option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="start-time" class="date-and-time">
+                            <option> Start Time </option>
+                            <option value="Test1"> Test 1 </option>
+                            <option value="Test2"> Test 2 </option>
+                            <option value="Test3"> Test 3 </option>
+                        </select>
+                        <input type="text" class="form-control" placeholder="End Time">
+                    </div>
+                </div><!-- END :: Date-Time -->
+
+                <section class="break"></section><!-- Break -->
+
+                <div class="form-group People-Number">
+                    <label class=" custom-label">Number Of People</label>
+                    <span>200 Max</span>
+                    <div>
+                        <input type="number" class="form-control" placeholder="200">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Print-Invitations"
+                                id="Print-Invitations">
+                            <label class="form-check-label" for="Print-Invitations">
+                                Print Invitations
+                            </label>
+                        </div>
+                    </div>
+                </div><!-- END :: People-Number -->
+
+                <section class="break"></section><!-- Break -->
+
+                <div class="form-group orders">
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Dessert-order" id="Dessert-order">
+                            <label class="form-check-label" for="Dessert-order">
+                                With Dessert
+                            </label>
+                            
+                            <!-- This link is for testing only to link the pages together...... Please remove it after the customer approval -->
+                            <a href="Bill-Book-Hall-2-rtl.html">With Dessert</a>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Drink-order" id="Drink-order">
+                            <label class="form-check-label" for="Drink-order">
+                                With Drink
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Meal-order" id="Meal-order">
+                            <label class="form-check-label" for="Meal-order">
+                                With Meal
+                            </label>
+                        </div>
+                    </div>
+                </div><!-- END :: Orders -->
+
+                <section class="break"></section><!-- Break -->
+
+                <div class="form-group Sections">
+                    <label class="custom-label">Hall Sections</label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Sections" id="Sections4">
+                            <label class="form-check-label" for="Sections4">
+                                One Section
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Sections" id="Sections5">
+                            <label class="form-check-label" for="Sections5">
+                                Two Section
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Sections" id="Sections6">
+                            <label class="form-check-label" for="Sections6">
+                                Three Sections
+                            </label>
+                        </div>
+                    </div>
+                </div><!-- END :: Sections -->
+
+                <section class="break"></section><!-- Break -->
+
+                <div class="form-group Notes">
+                    <label class="custom-label">Notes</label>
+                    <span>Optional</span>
+                    <div>
+                        <textarea class="form-control" id="floatingTextarea2" name="location"></textarea>
+                    </div>
+                </div><!-- END :: Notes -->
+            </form>
+            <!-- END :: Form -->
+        </div>
+    </div>
+    <!-- END :: Bill-book-hall -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slick Slider -->
+    <script src="js/slick.min.js"></script>
+
+    <!-- Select2 -->
+    <script src="js/select2.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

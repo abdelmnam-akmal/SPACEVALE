@@ -1,0 +1,31 @@
+.signup {
+    text-align: right;
+
+    .form {
+        margin: 50px 0 0 110px;
+
+        &::after {
+            right: -100%;
+        }
+
+        @media #{$mobile} {
+            margin: 50px 0px 0px;
+        }
+    }
+
+    .social_signup {
+        margin: 50px 0 0 110px;
+        position: relative;
+
+        @media #{$mobile} {
+            margin: 50px 0px 0px;
+        }
+
+        a {
+            img {
+                margin-right: 30px;
+                margin-left: 35px;
+            }
+        }
+    }
+}

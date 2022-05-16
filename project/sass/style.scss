@@ -1,0 +1,42 @@
+// Fonts
+@import "helpers/fonts";
+
+// Variables
+@import "helpers/variables";
+
+// Mixins
+@import "helpers/mixins";
+
+// extends
+@import "helpers/extends";
+
+// Buttons
+@import "components/buttons";
+
+// Filter
+@import "components/filter";
+
+// Shared Style
+@import "helpers/shared-style";
+
+// Navbar
+@import "layout/navbar";
+
+// book Service
+@import "pages/book-service";
+
+// Homepage
+@import "pages/homepage";
+
+// pages
+@import "pages/book-service"; // book service first page
+@import "pages/book-services-page"; // book services main page
+@import "pages/services-profile"; // Services Profile Page
+@import "pages/payment"; // Payment Page
+@import "pages/book-hall"; // Book Hall Page
+@import "pages/hall-profile"; // Hall Profile Page
+@import "pages/type-of-services"; // Type of services
+@import "pages/hall-request"; // Hall request
+@import "pages/signup"; // Signup
+@import "pages/signin"; // Signin 
+@import "pages/bill-book-hall"; //Bill-book-hall

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title> Hall Profile - EN </title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="css/slick.css" />
+
+    <!-- Select2 -->
+    <link rel="stylesheet" href="css/select2.min.css" />
+
+    <!-- RateYou Default Style -->
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+
+    <!-- Fancybox Plugin -->
+    <link rel="stylesheet" href="css/fancybox.css" />
+
+    <!-- Evo Calendar -->
+    <link rel="stylesheet" type="text/css" href="css/evo-calendar.min.css"/>
+
+    <!-- Style file -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- START :: Navbar -->
+    <nav class="main-navbar white-navbar fixed-top logged-user-navbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 d-flex justify-content-between">
+                    <a href="#" class="main-logo d-none d-lg-block">
+                        <img src="./images/main-logo.png" alt="SPACEVALE" title="SPACEVALE" />
+                    </a>
+                    <div class="navbar-actions d-flex align-items-center justify-content-between">
+                        <!-- START :: Search form -->
+                        <form class="search-form d-none d-lg-block">
+                            <div class="form-group">
+                                <input type="search" class="form-control" placeholder="search" />
+                                <button class="btn" type="submit">  
+                                    <img src="./images/search-flat-icon.svg" />
+                                </button>
+                            </div>
+                        </form>
+                        <!-- END :: Search form -->
+                        <div class="user-links">
+                            <a href="#" class="logged-user-btn"> 
+                                <img src="./images/msg-icon.svg" alt="Message icon" />
+                                Messages    
+                            </a>
+                            <a href="#" class="logged-user-btn"> 
+                                <img src="./images/bell-icon.svg" alt="Bell icon" />
+                                Booking Requests    
+                            </a>
+                        </div>
+                        <a href="services-profile.html" class="user-profile-link"> 
+                            <img src="./images/user-profile-icon.svg" alt="User Profile" />    
+                        </a>
+                    </div>
+                </div> <!-- END :: COL -->
+            </div> <!-- END :: ROW -->
+        </div>
+    </nav>
+    <!-- END :: Navbar -->
+
+    <main class="main-page">
+
+        <!-- START :: Header Hall -->
+        <section class="header-hall header-hall-profile">
+            <div class="container">
+                <div class="hedaer-content">
+                    <div class="header-img position-relative">
+                        <img src="images/image-hall.svg" alt="">
+                    </div>
+                    <div class="header-info">
+                        <h5 class="h5 font-weight-bold">Fairmont Nile City</h5>
+                        <ul class="list-unstyled m-0">
+                            <li>
+                                <span class="font-weight-bold rateyounumber">7/7</span>
+                                <!-- Please add Attribute "data-rateyo-num-stars" with value 7 to increase stars number to 7 -->
+                                <div id="rateYo" data-rateyo-num-stars="7" class="special-rate"></div>
+                            </li>
+                            <li>
+                                <img src="images/call-icon.svg" alt="">
+                                <a href="" class="desc-hall">01010108467</a>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="images/location-icon.svg" alt="">
+                                    <a href="" class="desc-hall">Nile City Towers - Corniche El Nil - Cairo</a>
+                                </div>
+                                <button class="black-btn">Edit</button>
+                            </li>
+                        </ul>
+                        <a href="#" class="message-notfication text-center text-hall-profile">
+                            <p>Your space is under approval from the site. You can complete the page until approval</p>
+                        </a>
+                        <a href="#" class="message-notfication text-center visible-in-sm">
+                            <img src="images/chat-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- START :: Header Hall -->
+
+        <!-- START :: Halls -->
+        <section class="halls">
+            <ul class="list-unstyled list-tabs">
+                <li>
+                    <!-- Please add Class "active" to the link If you want to switch between the content -->
+                    <a href="#" class="text-center font-weight-bold active">Hall 1</a>
+                </li>
+                <li>
+                    <a href="#" class="text-center font-weight-bold">Hall 2</a>
+                </li>
+                <li>
+                    <a href="#" class="text-center font-weight-bold special-link">
+                        <img src="images/plus-white.svg" class="d-none d-lg-inline" alt="">
+                        Hall 3
+                    </a>
+                </li>
+            </ul>
+
+
+            <!-- START :: Events Calendar -->
+            <section class="events-calendar">
+                <div class="container">
+                    <h3 class="h3 events-calendar__title"> Booked Days </h3>
+                    <div id="calendar"></div>
+                </div>
+            </section>
+            <!-- END :: Events Calendar -->
+
+
+            <div class="container">
+                <div class="halls-container">
+                    <div class="hall-photos">
+                        <h5 class="h5 font-weight-bold d-none d-lg-block">Photos Of Hall</h5>
+                        <div class="hall-photos-images">
+                            <div class="image-container"> <!-- START :: Hall Images -->
+                                <img class="gallary-image" src="images/slider-1.jpg" alt="" data-fancybox>
+                            </div>
+                            <div class="image-container">
+                                <div>
+                                    <img class="gallary-image" src="images/text.jpg" alt="" data-fancybox>
+                                </div>
+                                <div>
+                                    <img class="gallary-image" src="images/slider-3.jpg" alt="" data-fancybox>
+                                </div>
+                                <!-- Please add class "overlay-container" and div with class "overlay" inside the overlay-container to show the link to see all photos -->
+                                <div class="overlay-container">
+                                    <!-- Please add the "data-fancybox" attribute and class "gallary-image" to the image or link containing an image you want to display in a fancy collection. -->
+                                    <img class="gallary-image" src="images/slider-4.jpg" alt="" data-fancybox>
+                                    <div class="overlay">
+                                        <!-- Please add the "data-fancybox" attribute to the image or link containing an image you want to display in a fancy collection. -->
+                                        <a class="gallary-image text-center" href="images/slider-4.jpg" class="text-center text-descoration-none" data-fancybox>
+                                            <span class="d-block font-weight-bold">+3</span> See All
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-lg-none">
+                                    <img class="gallary-image" src="images/slider-4.jpg" alt="" data-fancybox>
+                                </div>
+                            </div> <!-- END :: Hall Images -->
+                        </div>
+                    </div>
+                    <div class="hall-info">
+                        <h5 class="h5 font-weight-bold d-none d-lg-block">Hall Information</h5>
+                        <div>
+                            <span class="h-hall font-weight-bold">Price Per Person <span>200 egp</span><span>with Drink</span></span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="type-hall font-weight-bold">Typ Of Hall</span>
+                                    <span class="result-type">Closed Hall</span>
+                                </li>
+                                <li>
+                                    <span class="font-weight-bold">Features Of Hall</span>
+                                    <div>
+                                        <span>Garage</span>
+                                        <span>Meals</span>
+                                        <span>Alcohol</span>
+                                        <span>Soft Drink</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="type-hall font-weight-bold">Number Of People</span>
+                                    <span class="result-type">100 To 150</span>
+                                </li>
+                                <li>
+                                    <span class="type-hall font-weight-bold">Place Space In M2</span>
+                                    <span class="result-type">300 M2</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <button class="black-btn">Edit</button>
+                                        <form class="tax-content">
+                                            <div class="text-center">
+                                                <input class="tax-input" type="file">
+                                                <button class="black-btn tax-btn">Add Your Tax file
+                                                    <span class="brief-wrapper">
+                                                        <img src="images/!-white.svg" class="brief-icon" alt="">
+                                                        <span class="breif-text">
+                                                            <p>
+                                                                Packages Enable You To Present Tempting Offers To Be Able To Compete Strongly
+                                                            </p>
+                                                        </span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END :: Halls -->
+
+
+        <!-- START :: Hall Package -->
+        <section class="hall-package">
+            <div class="container">
+                <h5 class="h5 font-weight-bold">Hall Package</h5>
+                <form class="package-content">
+                    <div class="input-contain"> <!-- START :: input image field -->
+                        <div class="text-center">
+                            <input class="services-input" type="file">
+                            <img src="images/plus-icon.svg" alt="">
+                            <a href="#">
+                                <span class="brief-wrapper">
+                                    <img src="images/!-icon.svg" class="brief-icon" alt="">
+                                    <span class="breif-text">
+                                        <p>
+                                            Packages Enable You To Present Tempting Offers To Be Able To Compete Strongly
+                                        </p>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div> <!-- END :: input image field -->
+                </form>
+            </div>
+        </section>
+        <!-- END :: Hall Package -->
+
+
+        <!-- START :: Avilable -->
+        <section class="avilable d-none d-lg-block">
+            <div class="container">
+                <h5 class="h5 font-weight-bold d-none d-lg-block">Available Items
+                    <span class="brief-wrapper">
+                        <img src="images/!-icon.svg" class="brief-icon" alt="">
+                        <span class="breif-text">
+                            <p>
+                                Packages Enable You To Present Tempting Offers To Be Able To Compete Strongly
+                            </p>
+                        </span>
+                    </span>
+                </h5>
+                <form class="package-content avilable-content">
+                    <div>
+                        <label for="" class="label-text font-weight-bold">Drink</label>
+                        <div class="input-contain"> <!-- START :: input image field -->
+                            <div class="text-center">
+                                <input class="services-input" type="file">
+                                <img src="images/plus-icon.svg" alt="">
+                            </div>
+                        </div> <!-- END :: input image field -->
+                    </div>
+                    <div>
+                        <label for="" class="label-text font-weight-bold">Dessert</label>
+                        <div class="input-contain"> <!-- START :: input image field -->
+                            <div class="text-center">
+                                <input class="services-input" type="file">
+                                <img src="images/plus-icon.svg" alt="">
+                            </div>
+                        </div> <!-- END :: input image field -->
+                    </div>
+                    <div>
+                        <label for="" class="label-text font-weight-bold">Meal</label>
+                        <div class="input-contain"> <!-- START :: input image field -->
+                            <div class="text-center">
+                                <input class="services-input" type="file">
+                                <img src="images/plus-icon.svg" alt="">
+                            </div>
+                        </div> <!-- END :: input image field -->
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- END :: Avilable -->
+
+    </main>
+
+    <!-- START :: Services Requests -->
+    <section class="services-request"> <!-- Use this section as a Notification -->
+        <div class="request">
+            <div class="request-img">
+                <img src="images/port-3.svg" alt="">
+            </div>
+            <div class="request-info">
+                <p class="request-title">Karim would like to reserve Hall 1 for <span>200</span> people on <span>November 11th</span></p>
+                <div class="request-btn">
+                    <a href="hall-request.html" class="main-btn see-request">See The Request</a>
+                    <span>11 min ago</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END :: Services Requests -->
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slick Slider -->
+    <script src="js/slick.min.js"></script>
+
+    <!-- Select2 -->
+    <script src="js/select2.min.js"></script>
+
+    <!-- RateYou Plugin -->
+    <script src="js/jquery.rateyo.min.js"></script>
+
+    <!-- Fancybox Plugin -->
+    <script src="js/fancybox.umd.js"></script>
+
+    <!-- Evo Calendar -->
+    <script src="js/evo-calendar.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+
+    <script>
+        $(function() {
+
+            // Please check the plugin demo => https://www.jqueryscript.net/time-clock/event-calendar-evo.html
+
+            $('#calendar').evoCalendar();
+            $('#calendar').evoCalendar('addCalendarEvent', [
+                {
+                    id: 1,
+                    name:"Wedding party",
+                    description: 'Lorem ipsum dolor sit..',
+                    date:"January/16/2022", //'March 21, 2020',
+                    type:"holiday", // (event, holiday, birthday).
+                    everyYear:true,
+                },
+                {
+                    id: 2,
+                    name:"Normal Event",
+                    description: 'Lorem ipsum dolor sit..',
+                    date:"January/16/2022", //'March 21, 2020',
+                    type:"event", // (event, holiday, birthday).
+                    everyYear:true,
+                },
+                {
+                    id: 3,
+                    name:"Birthday party",
+                    description: 'Lorem ipsum dolor sit..',
+                    date:"January/20/2022", //'March 21, 2020',
+                    type:"birthday", // (event, holiday, birthday).
+                    everyYear:true,
+                }
+            ])
+        });
+    </script>
+</body>
+
+</html>

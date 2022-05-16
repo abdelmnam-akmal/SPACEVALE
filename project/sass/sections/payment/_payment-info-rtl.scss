@@ -1,0 +1,51 @@
+.payment-container {
+    .payment-info {
+        .form-payment {
+            @media #{$maxSmall} {
+                padding-right: 20px;
+                padding-left: 0;
+            }
+            .date-time {
+                input {
+                    &.input-time {
+                        margin-right: 0;
+                        margin-left: 19px;
+                        &:last-of-type {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+            .payment-info-content {
+                div {
+                    .cvv {
+                        margin-right: 10px;
+                        margin-left: 0;
+                        img {
+                            left: 10px;
+                            right: auto;
+                        }
+                    }
+                }
+            }
+        }
+        .bill-book {
+            .list-payment {
+                padding-right: 0;
+                .list-units {
+                    .unit-desc {
+                        padding: 13px 13px 13px 40px;
+                        .unit-text {
+                            margin-right: 0;
+                            margin-left: 10px;
+                        }
+                        .cancle-btn {
+                            left: 15px;
+                            right: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.hall-request__left {
+    height: 620px;
+    border-radius: 9px;
+    background-color: $white-color;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    flex: 0 0 258px;
+    max-width: 258px;
+    @media #{$mobile} {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-right: 0;
+        display: flex;
+        flex-direction: row;
+        padding: 12px;
+        position: relative;
+        .hr-first-box {
+            margin-right: 40px;
+        }
+    }
+    .hr-profile-img {
+        width: 133px;
+        height: 133px;
+        margin: 0 auto 24px;
+        @media #{$mobile} {
+            width: 97px;
+            height: 97px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .hr-profile-name {
+        color: $black-color;
+        font: normal normal bold 20px/23px $Helvetica-Neue;
+        margin-bottom: 12px;
+    }
+    .hr-profile-job {
+        color: $black-color;
+        font: normal normal 500 16px/18px $Helvetica-Neue;
+        margin-bottom: 21px;
+    }
+    .hr-profile-label {
+        color: $black-color;
+        font: normal normal 500 16px/18px $Helvetica-Neue;
+        border: 1px solid #70707024;
+        border-radius: 5px;
+        height: 45px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        @media #{$mobile} {
+            border: none;
+            padding: 7px 0;
+            height: 30px;
+        }
+        img {
+            width: 16px;
+            height: 16px;
+            margin-right: 40px;
+        }
+    }
+    .hr-messages {
+        background-color: $main-color;
+        color: $white-color;
+        font: normal normal bold 16px/18px $Helvetica-Neue;
+        width: 100%;
+        height: 45px;
+        @extend %centering-items;
+        border-radius: 5px;
+        margin-top: auto;
+        @media #{$mobile} {
+            position: absolute;
+            bottom: 27px;
+            right: 15px;
+            width: 173px;
+        }
+        img {
+            width: 22px;
+            height: 22px;
+            margin-right: 22px;
+        }
+    }
+}

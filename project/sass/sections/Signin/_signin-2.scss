@@ -1,0 +1,286 @@
+.signin.page-2 {
+    .signin_header {
+        .register {
+            background: $black-color 0% 0% no-repeat padding-box;
+        }
+
+        .time-line {
+            &::after {
+                background: $gray-color 0% 0% no-repeat padding-box;
+            }
+
+            &:last-of-type {
+                margin: 0px;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            &.one {
+                background: $black-color 0% 0% no-repeat padding-box;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: calc(50% - 2px);
+                    right: -107px;
+                    width: 107px;
+                    height: 4px;
+                    background: $black-color 0% 0% no-repeat padding-box;
+                    z-index: 1;
+                }
+            }
+
+            &.two {
+                background: $black-color 0% 0% no-repeat padding-box;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: calc(50% - 2px);
+                    right: -30px;
+                    width: 30px;
+                    height: 4px;
+                    background: $black-color 0% 0% no-repeat padding-box;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+    .signin_form {
+
+        input,
+        .Person-span,
+        .People-span,
+        .Space-span,
+        .Spaces-span {
+            background: $white-color 0% 0% no-repeat padding-box;
+            border-radius: 12px;
+            text-transform: capitalize;
+            font: normal normal 500 16px/18px $Helvetica-Neue;
+            letter-spacing: 0px;
+            color: #4b4b4b49;
+            border: none;
+            padding: 25px 30px;
+            width: 505px;
+            height: 64px;
+
+            &[type="number"] {
+                width: 243px;
+                text-align: center;
+                padding: 0px;
+            }
+
+            @media #{$mobile} {
+                width: 100%;
+            }
+        }
+
+        input::placeholder {
+            color: #4b4b4b49;
+        }
+
+        .People-span,
+        .Space-span,
+        .Spaces-span {
+            width: 203px;
+            margin-right: 20px;
+            color: #4B4B4B;
+        }
+
+        .select2-container--default {
+            background: $white-color 0% 0% no-repeat padding-box;
+            border-radius: 12px;
+            margin-right: 20px;
+            background-color: #fff;
+            width: 243px !important;
+            height: 64px !important;
+            padding: 24px 18px;
+            .select2-selection--single {
+                padding:0px !important;
+                justify-content: left;
+            }
+
+            .select2-selection__rendered {
+                font: normal normal 500 16px/18px $Helvetica-Neue;
+                max-width: 100% !important;
+                padding:0px !important;
+                color: #4B4B4B !important;
+            }
+
+            .select2-selection--single .select2-selection__arrow b {
+                border-color: $main-color transparent transparent transparent;
+            }
+
+            &.select2-container--open .select2-selection--single .select2-selection__arrow b {
+                border-color: transparent transparent $main-color transparent;
+            }
+
+            @media #{$mobile} {
+                margin-bottom: 30px;
+            }
+        }
+
+        label {
+            margin: 0px;
+            padding: 20px 12px;
+            text-align: left;
+            font: normal normal 500 16px/18px $Helvetica-Neue;
+            letter-spacing: 0px;
+            color: rgba(75, 75, 75, 0.42);
+            text-transform: capitalize;
+
+            &.per {
+                font: normal normal bold 16px/18px $Helvetica-Neue;
+                color: $black-color;
+                padding: 20px 30px;
+
+                @media #{$mobile} {
+                    padding: 20px;
+                    font: normal normal 500 10px/11px $Helvetica-Neue !important;
+                }
+
+            }
+        }
+
+        .Name-Space {
+            @media #{$mobile} {
+                margin: 0px;
+            }
+        }
+
+        .Person {
+            input {
+                width: 203px;
+                margin-right: 0px;
+
+                @media #{$mobile} {
+                    width: 128px;
+                    font: normal normal 500 10px/11px $Helvetica-Neue;
+                    height: 40px;
+                    padding: 15px 20px;
+                }
+            }
+
+            .select2-container--default {
+                margin: 0px !important;
+                width: 214px !important;
+
+                .select2-selection--single {
+                    justify-content: center;
+
+                    @media #{$mobile} {
+                        width: 90px !important;
+                    }
+                }
+
+
+                @media #{$mobile} {
+                    width: 135px !important;
+                    font: normal normal 500 10px/11px $Helvetica-Neue !important;
+                    height: 40px !important;
+                    padding: 15px 20px !important;
+                }
+
+                .select2-selection__rendered {
+                    color: #4B4B4B49 !important;
+                }
+
+                .select2-selection--single .select2-selection__arrow b {
+                    border-color: $main-color transparent transparent transparent;
+                }
+
+                &.select2-container--open .select2-selection--single .select2-selection__arrow b {
+                    border-color: transparent transparent $main-color transparent;
+                }
+            }
+
+
+        }
+
+        .People,
+        .Space {
+            input {
+                &[type="number"] {
+                    text-align: center;
+                    padding: 20px 0px;
+                    width: 120px;
+                }
+
+            }
+        }
+
+        .People {
+            @media #{$mobile} {
+                .People-span {
+                    width: 128px;
+                    height: 40px;
+                    font: normal normal 500 10px/11px $Helvetica-Neue;
+                    padding: 15px 20px;
+                    margin-right: 10px;
+                }
+
+                input {
+                    &[type="number"] {
+                        padding: 15px 0px;
+                        width: 77px;
+                        height: 40px;
+                        font: normal normal 500 10px/11px $Helvetica-Neue;
+                        margin-right: 0px;
+                    }
+                }
+
+                label {
+                    padding: 20px 5px;
+                    font: normal normal 500 10px/11px $Helvetica-Neue;
+                }
+            }
+        }
+
+        .Space {
+            @media #{$mobile} {
+                .Space-span {
+                    width: 184px;
+                    height: 58px;
+                    font: normal normal 500 14px/16px $Helvetica-Neue;
+                    margin-right: 10px;
+                    padding: 20px 27px 20px 39px;
+                }
+
+                input {
+                    &[type="number"] {
+                        padding: 20px 0px;
+                        width: 112px;
+                        height: 58px;
+                        font: normal normal 500 14px/16px $Helvetica-Neue;
+                        margin-right: 0px;
+                    }
+                }
+
+                label {
+                    width: 19px;
+                    margin-left: 0px;
+                }
+            }
+        }
+
+        .Spaces {
+
+            .Spaces-span,
+            input {
+                width: 243px;
+            }
+
+            @media #{$mobile} {
+                .Spaces-span {
+                    width: 100%;
+                    margin: 0px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+    }
+}

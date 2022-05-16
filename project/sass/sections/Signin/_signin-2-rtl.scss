@@ -1,0 +1,69 @@
+.signin.page-2 {
+    .signin_header {
+        .time-line {
+            &.one {
+                &::before {
+                    right: auto;
+                    left: -107px;
+                }
+            }
+
+            &.two {
+                &::before {
+                    right: auto;
+                    left: -30px;
+                }
+            }
+        }
+    }
+
+    .signin_form {
+        .People-span,
+        .Space-span,
+        .Spaces-span {
+            margin-right: 0px;
+            margin-left: 20px;
+        }
+
+        .select2-container--default {
+            text-align: right;
+            margin-right: 0px;
+            margin-left: 20px;
+            .select2-selection--single {
+                justify-content: right;
+            }
+        }
+
+        .People {
+            @media #{$mobile} {
+                .People-span {
+                    margin-right: auto;
+                    margin-left: 10px;
+                }
+
+                input {
+                    &[type="number"] {
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+
+        .Space {
+            @media #{$mobile} {
+                .Space-span {
+                    margin-right: 0px;
+                    margin-left: 10px;
+                    padding: 20px 39px 20px 27px;
+                }
+
+                input {
+                    &[type="number"] {
+                        margin-right: 0px;
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

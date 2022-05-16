@@ -1,0 +1,47 @@
+// Hall Request
+.hall-request {
+    background-color: $light-white-color;
+    padding-bottom: 60px;
+    @media #{$mobile} {
+        padding-top: 33px;
+    }
+    > .container {
+        display: flex;
+        @media #{$mobile} {
+            flex-direction: column;
+        }
+    }
+}
+// Top Profile Menu
+.top-profile-menu {
+    background-color: $white-color;
+    height: 105px;
+    margin-bottom: 56px;
+    @media #{$mobile} {
+        display: none;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 100px;
+        height: 100%;
+    }
+    a {
+        color: $black-color;
+        border-bottom: 4px solid transparent;
+        transition: all 0.3s ease-in-out;
+        padding-bottom: 11px;
+        font: normal normal bold 20px/23px $Helvetica-Neue;
+        &.active,
+        &:hover {
+            color: $main-color;
+            border-color: $main-color;
+        }
+    }
+}
+// Left Side
+@import "../sections/hall-request/left-side";
+
+// Right Side
+@import "../sections/hall-request/right-side";

@@ -1,0 +1,48 @@
+.signin {
+    .signin_header {
+        span.register {
+            margin-right: 0px;
+            margin-left: 92px;
+
+            @media #{$mobile} {
+                margin-left: 0px;
+            }
+        }
+
+        span.main {
+            margin-right: 46px;
+            margin-left: 0px;
+        }
+
+        .time-line {
+            margin: 0px 0px 0px 100px;
+
+            &::after {
+                left: -106px;
+                right: auto;
+            }
+
+            &:last-of-type {
+                margin: 0px;
+            }
+        }
+    }
+
+    .signin_form {
+        margin-top: 55px;
+
+        a.next {
+            margin-left: 0px;
+            margin-right: 379px;
+
+            @media #{$ipadPro} {
+                margin-right: 200px;
+                margin-left: 0px;
+            }
+
+            @media #{$mobile} {
+                margin: 68px auto 0px;
+            }
+        }
+    }
+}

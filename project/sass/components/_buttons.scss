@@ -1,0 +1,36 @@
+.black-btn,
+.main-btn {
+    min-width: 174px;
+    height: 43px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $white-color;
+    border-radius: 22px;
+    font: normal normal 500 15px/21px $Helvetica-Neue;
+    padding-top: 3px;
+    border: none;
+    cursor: pointer;
+    @media #{$mobile} {
+        min-width: 112px;
+        height: 28px;
+        font-size: 10px;
+        line-height: 14px;
+        padding-top: 2px;
+    }
+    @media #{$ipadPro} {
+        font-size: 11px;
+        min-width: 130px;
+    }
+    &:hover {
+        color: $white-color;
+    }
+}
+
+.black-btn {
+    background-color: $black-color;
+}
+
+.main-btn {
+    background-color: $main-color;
+}

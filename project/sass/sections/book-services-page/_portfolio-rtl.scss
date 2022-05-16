@@ -1,0 +1,13 @@
+.portfolio {
+    .container {
+        .input-contain {
+            left: 78px;
+            right: auto;
+            @media #{$mobile} {
+                right: 50%;
+                left: auto;
+                transform: translateX(50%);
+            }
+        }
+    }
+}

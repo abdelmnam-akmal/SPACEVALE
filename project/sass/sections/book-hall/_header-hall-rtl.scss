@@ -1,0 +1,43 @@
+.header-hall {
+    .hedaer-content {
+        .header-img {
+            margin-right: 0;
+            margin-left: 27px;
+            .heart {
+                right: 10px;
+                left: auto;
+            }
+        }
+         .header-info {
+             ul {
+                 padding-right: 0;
+                 li {
+                     &:first-of-type {
+                         .rateyounumber {
+                             margin-right: 0;
+                             margin-left: 17px;
+                             @media #{$maxSmall} {
+                                 margin-left: 6px;
+                             }
+                         }
+                         .see-all {
+                             margin-left: 0;
+                             margin-right: 8px;
+                         }
+                     }
+                     .desc-hall {
+                         margin-right: 23px;
+                         margin-left: 0;
+                         @media #{$mobile} {
+                             margin-right: 8px;
+                         }
+                     }
+                 }
+             }
+             .message-notfication {
+                 left: 0;
+                 right: auto;
+             }
+         }
+    }
+ }

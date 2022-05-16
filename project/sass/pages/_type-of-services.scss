@@ -1,0 +1,13 @@
+.type-of-services {
+    padding-top: 35px;
+    background-color: $light-white-color;
+    display: flex;
+    justify-content: space-between;
+    @media #{$mobile} {
+        padding-top: 8px;
+        flex-wrap: wrap;
+    }
+}
+
+// Cards
+@import "../sections/type-of-services/services-cards"

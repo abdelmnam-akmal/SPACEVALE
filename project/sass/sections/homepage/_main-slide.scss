@@ -1,0 +1,158 @@
+#pagepiling {
+    @media #{$mobile} {
+        margin-top: -58px;
+    }
+    > section {
+        overflow: hidden;
+        padding-top: 100px;
+        @media #{$mobile} {
+            padding-top: 57px;
+            overflow: initial;
+            &:last-child {
+                padding-bottom: 100px !important;
+            }
+        }
+    }
+}
+#pp-nav {
+    display: none;
+}
+.main-slide {
+    background: url('../images/galaxy.svg') no-repeat center center;
+    background-size: cover;
+    @extend %centering-items-mobile;
+    @media #{$mobile} {
+        height: 100vh;
+    }
+    .main-title {
+        font: normal normal medium 42px/56px $Helvetica-Neue;
+        color: $white-color;
+        margin-bottom: 40px;
+        @media #{$mobile} {
+            display: none;
+        }
+    }
+    .main-logo-for-mobile {
+        width: 191px;
+        height: 140px;
+        margin-bottom: 43px !important;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .main-type-of-services {
+        display: flex;
+        width: 637px;
+        margin: 0 auto 21px;
+        @media #{$mobile} {
+            display: none;
+        }
+        label {
+            color: $white-color;
+            font: normal normal bold 20px/23px $Helvetica-Neue;
+        }
+        > .form-group {
+            margin-bottom: 0;
+            &:first-child {
+                margin-right: 45px;
+            }
+        }
+    }
+    .main-search-fields {
+        width: 637px;
+        margin: 0 auto 0;
+        background-color: $white-color;
+        width: 637px;
+        height: 80px;
+        padding: 17px 20px 17px 60px;
+        border-radius: 48px;
+        margin-bottom: 107px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media #{$mobile} {
+            background: none;
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 34px;
+            padding: 0;
+        }
+        .form-group {
+            margin-bottom: 0;
+            &:not(:last-child) {
+                @media #{$mobile} {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .btn {
+            background: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            padding: 0;
+            border: none !important;
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+    .select2-container--default {
+        @media #{$mobile} {
+            width: 191px !important;
+            height: 43px;
+            border-radius: 22px;
+            background-color: $white-color;
+        }
+        @extend %centering-items-mobile;
+        .select2-selection--single {
+            height: auto;
+        }
+        .select2-selection__rendered {
+            color: #1F3615;
+            font: normal normal 500 16px/18px $Helvetica-Neue;
+            @media #{$mobile} {
+                padding-right: 10px !important;
+            }
+        }
+        .select2-selection__arrow {
+            height: auto;
+            width: auto;
+            @extend %centering-items-mobile;
+            @media #{$mobile} {
+                margin: 0;
+                b {
+                    position: static;
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+    .browse-faster-label {
+        font: normal normal medium 25px/33px $Helvetica-Neue;
+        color: $white-color;
+        margin-bottom: 25px;
+        @media #{$mobile} {
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 21px;
+        }
+    }
+    .explore-btn {
+        margin: auto;
+        display: flex;
+        width: 174px;
+        @media #{$mobile} {
+            width: 191px;
+            height: 43px;
+            font-size: 13px;
+            line-height: 17px;
+        }
+    }
+}

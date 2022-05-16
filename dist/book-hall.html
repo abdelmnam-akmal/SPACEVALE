@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title> Book Hall - EN </title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="css/slick.css" />
+
+    <!-- Select2 -->
+    <link rel="stylesheet" href="css/select2.min.css" />
+
+    <!-- RateYou Default Style -->
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+
+    <!-- Fancybox Plugin -->
+    <link rel="stylesheet" href="css/fancybox.css" />
+
+    <!-- Style file -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- START :: Navbar -->
+    <nav class="main-navbar white-navbar fixed-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 d-none d-lg-block">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="main-logo">
+                                <img src="./images/main-logo.png" alt="SPACEVALE" title="SPACEVALE" />
+                            </a>
+                        </div> <!-- END :: COL -->
+                        <div class="col">
+                            <form class="search-main-form d-flex align-items-center justify-content-between">
+                                <div class="form-group">
+                                    <select name="type" class="form-control">
+                                        <option> Type </option>
+                                        <option value="wedding"> wedding </option>
+                                        <option value="part"> part </option>
+                                        <option value="event"> event </option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select name="where" class="form-control">
+                                        <option> Where </option>
+                                        <option value="Cairo"> Cairo </option>
+                                        <option value="Mansoura"> Mansoura </option>
+                                        <option value="Alex"> Alex </option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select name="when" class="form-control">
+                                        <option> When </option>
+                                        <option value="Sunday"> Sunday </option>
+                                        <option value="Monday"> Monday </option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-light" type="submit">
+                                        <img src="./images/search-icon.svg" />
+                                    </button>
+                                </div>
+                            </form>
+                        </div> <!-- END :: COL -->
+                    </div> <!-- END :: ROW -->
+                </div> <!-- END :: COL -->
+                <div class="col-12 col-lg-6">
+                    <div class="navbar-actions d-flex align-items-center justify-content-between">
+                        <div class="your-links">
+                            <a href="signin-1.html" class="black-btn"> ADD YOUR SPACE </a>
+                            <a href="#" class="black-btn"> ADD YOUR SERVES </a>
+                        </div>
+                        <a href="#" class="user-profile-link"> 
+                            <img src="./images/user-profile-icon.svg" alt="User Profile" />    
+                        </a>
+                    </div>
+                </div> <!-- END :: COL -->
+            </div> <!-- END :: ROW -->
+        </div>
+    </nav>
+    <!-- END :: Navbar -->
+
+    <main class="main-page">
+
+        <!-- START :: Header Hall -->
+        <section class="header-hall">
+            <div class="container">
+                <div class="hedaer-content">
+                    <div class="header-img position-relative">
+                        <img src="images/image-hall.svg" alt="">
+                        <button href="#" class="message-notfication position-absolute text-center heart d-none d-lg-block">
+                            <img src="images/heart.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="header-info">
+                        <h5 class="h5 font-weight-bold">Fairmont Nile City</h5>
+                        <ul class="list-unstyled m-0">
+                            <li>
+                                <span class="font-weight-bold rateyounumber">7/7</span>
+                                <!-- Please add Attribute "data-rateyo-num-stars" with value 7 to increase stars number to 7 -->
+                                <div id="rateYo" data-rateyo-num-stars="7" class="special-rate"></div>
+                                <a href="#" class="see-all d-none d-lg-block">See all</a>
+                            </li>
+                            <li>
+                                <img src="images/call-icon.svg" alt="">
+                                <a href="" class="desc-hall">01010108467</a>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="images/location-icon.svg" alt="">
+                                    <a href="" class="desc-hall">Nile City Towers - Corniche El Nil - Cairo</a>
+                                </div>
+                                <button class="black-btn">See On Map</button>
+                            </li>
+                        </ul>
+                        <a href="#" class="message-notfication text-center">
+                            <img src="images/chat-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- START :: Header Hall -->
+
+        <!-- START :: Halls -->
+        <section class="halls">
+            <ul class="list-unstyled list-tabs">
+                <li>
+                    <!-- Please add Class "active" to the link If you want to switch between the content -->
+                    <a href="#" class="text-center font-weight-bold active">Hall 1</a>
+                </li>
+                <li>
+                    <a href="book-hall-2.html" class="text-center font-weight-bold">Hall 2</a>
+                </li>
+                <li>
+                    <a href="#" class="text-center font-weight-bold">Hall 3</a>
+                </li>
+            </ul>
+            <div class="container">
+                <div class="halls-container">
+                    <div class="hall-photos">
+                        <h5 class="h5 font-weight-bold d-none d-lg-block">Photos Of Hall</h5>
+                        <div class="hall-photos-images">
+                            <div class="image-container"> <!-- START :: Hall Images -->
+                                <img class="gallary-image" src="images/slider-1.jpg" alt="" data-fancybox>
+                            </div>
+                            <div class="image-container">
+                                <div>
+                                    <img class="gallary-image" src="images/text.jpg" alt="" data-fancybox>
+                                </div>
+                                <div>
+                                    <img class="gallary-image" src="images/slider-3.jpg" alt="" data-fancybox>
+                                </div>
+                                <!-- Please add class "overlay-container" and div with class "overlay" inside the overlay-container to show the link to see all photos -->
+                                <div class="overlay-container">
+                                    <!-- Please add the "data-fancybox" attribute and class "gallary-image" to the image or link containing an image you want to display in a fancy collection. -->
+                                    <img class="gallary-image" src="images/slider-4.jpg" alt="" data-fancybox>
+                                    <div class="overlay">
+                                        <!-- Please add the "data-fancybox" attribute to the image or link containing an image you want to display in a fancy collection. -->
+                                        <a class="gallary-image text-center" href="images/slider-4.jpg" class="text-center text-descoration-none" data-fancybox>
+                                            <span class="d-block font-weight-bold">+3</span> See All
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-lg-none">
+                                    <img class="gallary-image" src="images/slider-4.jpg" alt="" data-fancybox>
+                                </div>
+                            </div> <!-- END :: Hall Images -->
+                        </div>
+                    </div>
+                    <div class="hall-info">
+                        <h5 class="h5 font-weight-bold d-none d-lg-block">Hall Information</h5>
+                        <div>
+                            <span class="h-hall font-weight-bold">Price Per Person <span>200 egp</span><span>with Drink</span></span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="type-hall font-weight-bold">Typ Of Hall</span>
+                                    <span class="result-type">Closed Hall</span>
+                                </li>
+                                <li>
+                                    <span class="font-weight-bold">Features Of Hall</span>
+                                    <div>
+                                        <span>Garage</span>
+                                        <span>Meals</span>
+                                        <span>Alcohol</span>
+                                        <span>Soft Drink</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="type-hall font-weight-bold">Number Of People</span>
+                                    <span class="result-type">100 To 150</span>
+                                </li>
+                                <li>
+                                    <span class="type-hall font-weight-bold">Place Space In M2</span>
+                                    <span class="result-type">300 M2</span>
+                                </li>
+                                <li>
+                                    <a href="Bill-Book-Hall-1.html" class="main-btn">Book Hall 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END :: Halls -->
+
+        <!-- START :: Package -->
+        <section class="package">
+            <div class="container"> <!-- START :: Container -->
+                <div class="row"> <!-- START :: Row -->
+                    <div class="col-12 h-package font-weight-bold">Package</div>
+                    <div class="col-md-6 col-lg-4 package-card"> <!-- START :: Col -->
+                        <div class="card-content"> <!-- START :: Card -->
+                            <div class="title-card">
+                                <div class="header-title">
+                                    <span>Provide</span>
+                                    <button>
+                                        <img src="images/photo-icon.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="footer-title">
+                                    <span>Number Of People</span>
+                                    <span>100</span>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled desc-card">
+                                <li>
+                                    <div>
+                                        <span>Soft Drink</span>
+                                        <img src="images/check-icon.svg" alt="">
+                                    </div>
+                                    <span>Soda</span>
+                                </li>
+                            </ul>
+                            <div class="total-card">
+                                <span class="price">Price</span>
+                                <div>
+                                    <span>20000 egp</span>
+                                    <button class="main-btn">Book</button>
+
+                                    <!-- This link is for testing only to link the pages together...... Please remove it after the customer approval -->
+                                    <a href="Bill-Book-Hall-3.html">Book-hall</a>
+                                </div>
+                            </div>
+                        </div> <!-- END :: Card -->
+                    </div> <!-- END :: Col -->
+                    <div class="col-md-6 col-lg-4 package-card"> <!-- START :: Col -->
+                        <div class="card-content"> <!-- START :: Card -->
+                            <div class="title-card">
+                                <div class="header-title">
+                                    <span>Provide</span>
+                                    <button>
+                                        <img src="images/photo-icon.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="footer-title">
+                                    <span>Number Of People</span>
+                                    <span>100</span>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled desc-card">
+                                <li>
+                                    <div>
+                                        <span>Dessert</span>
+                                        <img src="images/check-icon.svg" alt="">
+                                    </div>
+                                    <span>A Piece Of Cake And A Piece Of Oriental Sweets</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Soft Drink</span>
+                                        <img src="images/check-icon.svg" alt="">
+                                    </div>
+                                    <span>Soda</span>
+                                </li>
+                            </ul>
+                            <div class="total-card">
+                                <span class="price">Price</span>
+                                <div>
+                                    <span>20000 egp</span>
+                                    <button class="main-btn">Book</button>
+                                    
+                                    <!-- This link is for testing only to link the pages together...... Please remove it after the customer approval -->
+                                    <a href="Bill-Book-Hall-4.html">Book-hall</a>
+                                </div>
+                            </div>
+                        </div> <!-- END :: Card -->
+                    </div> <!-- END :: Col -->
+                    <div class="col-md-6 col-lg-4 package-card"> <!-- START :: Col -->
+                        <div class="card-content"> <!-- START :: Card -->
+                            <div class="title-card">
+                                <div class="header-title">
+                                    <span>Provide</span>
+                                    <button>
+                                        <img src="images/photo-icon.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="footer-title">
+                                    <span>Number Of People</span>
+                                    <span>100</span>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled desc-card">
+                                <li>
+                                    <div>
+                                        <span>Meal</span>
+                                        <img src="images/check-icon.svg" alt="">
+                                    </div>
+                                    <span>A Piece Of Cake And A Piece Of Oriental Sweets</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Soft Drink</span>
+                                        <img src="images/check-icon.svg" alt="">
+                                    </div>
+                                    <span>Soda</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Dessert</span>
+                                        <img src="images/check-icon.svg" alt="">
+                                    </div>
+                                    <span>A Piece Of Cake And A Piece Of Oriental Sweets</span>
+                                </li>
+                            </ul>
+                            <div class="total-card">
+                                <span class="price">Price</span>
+                                <div>
+                                    <span>20000 egp</span>
+                                    <button class="main-btn">Book</button>
+                                </div>
+                            </div>
+                        </div> <!-- END :: Card -->
+                    </div> <!-- END :: Col -->
+                </div> <!-- END :: Row -->
+            </div> <!-- END  :: Container -->
+        </section>
+        <!-- END :: Package -->
+
+        <!-- START :: Suggested Services -->
+        <section class="suggested-services d-none d-lg-block">
+            <div class="container">
+                <div class="row"> <!-- START :: Row -->
+                    <div class="col-12 header-suggest font-weight-bold"> <!-- START :: Col -->
+                        Suggested Services
+                    </div> <!-- END :: Col -->
+                    <div class="col-lg-4 suggest-content"> <!-- START :: Col -->
+                        <div>
+                            <img src="images/suggest-1.svg" alt="">
+                            <div class="text-center">Professional Photographer</div>
+                        </div>
+                    </div> <!-- END :: Col -->
+                    <div class="col-lg-4 suggest-content"> <!-- START :: Col -->
+                        <div>
+                            <img src="images/suggest-2.svg" alt="">
+                            <div class="text-center">Party Designer</div>
+                        </div>
+                    </div> <!-- END :: Col -->
+                    <div class="col-lg-4 suggest-content"> <!-- START :: Col -->
+                        <div>
+                            <img src="images/suggest-3.svg" alt="">
+                            <div class="text-center">Groom’s Car</div>
+                        </div>
+                    </div> <!-- END :: Col -->
+                </div> <!-- END :: Row -->
+            </div>
+        </section>
+        <!-- START :: Suggested Services -->
+
+    </main>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slick Slider -->
+    <script src="js/slick.min.js"></script>
+
+    <!-- Select2 -->
+    <script src="js/select2.min.js"></script>
+
+    <!-- RateYou Plugin -->
+    <script src="js/jquery.rateyo.min.js"></script>
+
+    <!-- Fancybox Plugin -->
+    <script src="js/fancybox.umd.js"></script>
+
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

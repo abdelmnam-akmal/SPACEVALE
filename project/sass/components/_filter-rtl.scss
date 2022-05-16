@@ -1,0 +1,20 @@
+// Desktop Filter
+.filter {
+    #accordion {
+        .card {
+            
+        }
+        .card-header {
+            button {
+                &::after {
+                    transform: rotate(90deg);
+                }
+                &:not(.collapsed) {
+                    &::after {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
+}

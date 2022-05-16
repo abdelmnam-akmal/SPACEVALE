@@ -1,0 +1,36 @@
+.info {
+    .info-content {
+        padding-left: 0;
+        padding-right: 17px;
+        > div {
+            .message-notfication {
+                left: 20px;
+                right: auto;
+                &.heart {
+                    left: 30px;
+                    right: auto;
+                }
+            }
+            .header-information {
+                @media #{$maxSmall} {
+                    left: calc(50% + 7.5px);
+                }
+            }
+            .list-content {
+                li {
+                    img {
+                        margin-right: 0;
+                        margin-left: 16px;
+                    }
+                    &:first-of-type {
+                        padding-left: 0;
+                        padding-right: 30px;
+                        span {
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.signin.page-1 {
+    .signin_header {
+        .time-line {
+            &.one {
+                &::before {
+                    left: -65px;
+                    right: auto;
+                }
+
+            }
+        }
+    }
+
+    .signin_form {
+        span.form-control {
+
+            margin-left: 0px;
+            margin-right: 20px;
+        }
+
+        span.form-control {
+            margin-right: 0px;
+            margin-left: 20px;
+        }
+    }
+}

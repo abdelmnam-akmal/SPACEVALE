@@ -1,0 +1,98 @@
+.type-of-services__cards {
+    margin-left: 23px;
+    margin-right: 0;
+}
+
+// Main card
+.service-main-card {
+    .service-main-card__img {
+        margin-left: 17px;
+        margin-right: 0;
+        @media #{$mobile} {
+            margin-right: 0;
+            margin-left: 10px;
+        }
+        .slick-dots {
+            li {
+                &:not(:last-child) {
+                    button {
+                        margin-left: 20px;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .service-main-card__info {
+        .card-title-and-rating {
+            .rating-box {
+                span {
+                    margin-left: 17px;
+                    margin-right: 0;
+                    @media #{$mobile} {
+                        margin-right: 0;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .price-per-person {
+            padding: 5px 14px 5px 21px;
+            > div {
+                span {
+                    &:not(:last-child) {
+                        margin-left: 0;
+                        margin-right: 17px;
+                        @media #{$mobile} {
+                            margin-left: 0;
+                            margin-right: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .features-of-hall {
+            .service-tags {
+                > a {
+                    &:not(:last-child) {
+                        margin-right: 0;
+                        margin-left: 20px;
+                        @media #{$mobile} {
+                            margin-right: 0;
+                            margin-left: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .favorit-btn {
+        right: 27px;
+        left: auto;
+        top: 22px;
+        @media #{$mobile} {
+            right: 16px;
+            left: auto;
+        }
+    }
+    &.secondary-card {
+        .secondary-card__gallery {
+            img {
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-left: 20px;
+                    @media #{$mobile} {
+                        margin-right: 0;
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Services map
+.services-map {
+    margin-right: 0;
+    margin-left: 15px;
+}

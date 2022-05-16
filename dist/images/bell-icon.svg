@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.944" height="26.944" viewBox="0 0 26.944 26.944">
+  <g id="icon_notification" transform="matrix(0.966, -0.259, 0.259, 0.966, -2.228, -0.956)">
+    <path id="Notification_Icon" data-name="Notification Icon" d="M8.25,19.25h5.5a2.75,2.75,0,1,1-5.5,0ZM1.375,17.875a1.375,1.375,0,1,1,0-2.75h.688A5.986,5.986,0,0,0,4.125,11V6.875A6.809,6.809,0,0,1,11,0a6.808,6.808,0,0,1,6.874,6.875V11a5.983,5.983,0,0,0,2.063,4.126h.688a1.375,1.375,0,0,1,0,2.75Z" transform="translate(0.431 7)" fill="#e840c1"/>
+  </g>
+</svg>

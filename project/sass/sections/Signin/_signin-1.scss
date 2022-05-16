@@ -1,0 +1,74 @@
+.signin.page-1 {
+    .signin_header {
+        .register {
+            background: $main-color 0% 0% no-repeat padding-box;
+        }
+
+
+        .time-line {
+            &::after {
+                background: #FBFBFB 0% 0% no-repeat padding-box;
+            }
+
+            &:last-of-type {
+                margin: 0px;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            &.one {
+                background: $main-color 0% 0% no-repeat padding-box;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: calc(50% - 2px);
+                    right: -65px;
+                    width: 65px;
+                    height: 4px;
+                    background: $main-color 0% 0% no-repeat padding-box;
+                    z-index: 1;
+                }
+
+            }
+        }
+    }
+
+    .signin_form {
+
+        input,
+        span {
+            background: $white-color 0% 0% no-repeat padding-box;
+            border-radius: 12px;
+            text-transform: capitalize;
+            font: normal normal 500 16px/18px $Helvetica-Neue;
+            letter-spacing: 0px;
+            color: #4b4b4b43;
+            border: none;
+            padding: 20px 30px;
+            width: 505px;
+            height: 64px;
+
+            &[type="number"] {
+                width: 243px;
+                text-align: center;
+                padding: 0px;
+            }
+
+            @media #{$mobile} {
+                width: 100%;
+            }
+        }
+
+        span.form-control {
+            width: 243px;
+            margin-right: 20px;
+
+            @media #{$mobile} {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

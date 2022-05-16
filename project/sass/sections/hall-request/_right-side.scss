@@ -1,0 +1,152 @@
+.hall-request__right {
+    flex: 0 0 calc(100% - 278px);
+    max-width: calc(100% - 278px);
+    background-color: $white-color;
+    border-radius: 9px;
+    padding: 30px 25px;
+    @media #{$mobile} {
+        flex: 0 0 100%;
+        max-width: 100%;
+        background-color: $light-white-color;
+    }
+    .row {
+        align-items: center;
+    }
+    .note-request {
+        min-height: 63px;
+        border: 1px solid #70707064;
+        border-radius: 7px;
+        padding: 20px;
+        margin-bottom: 25px;
+        @media #{$mobile} {
+            background-color: $white-color;
+        }
+    }
+    .hr-prag {
+        font: normal normal 500 16px/18px $Helvetica-Neue;
+        color: $light-gray-color;
+        margin-bottom: 31px;
+    }
+    .form-group {
+        margin-bottom: 33px;
+        label {
+            font: normal normal 500 16px/18px $Helvetica-Neue;
+            color: rgba($black-color, 0.5);
+        }
+    }
+    .bill-label {
+        border: 1px solid #70707033;
+        border-radius: 10px;
+        height: 49px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px;
+        width: 297px;
+        @media #{$mobile} {
+            width: 100%;
+        }
+        span {
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 500;
+            color: rgba($black-color, 0.7);
+        }
+        &.highlighted-bill-label {
+            border-color: $main-color;
+            span {
+                color: $main-color;
+            }
+        }
+    }
+    .hr-main-label {
+        font: normal normal bold 16px/18px $Helvetica-Neue;
+        color: $black-color;
+        margin-bottom: 24px;
+        margin-top: 23px;
+    }
+    .date-time {
+        span {
+            font: normal normal 500 14px/16px $Helvetica-Neue;
+            color: $light-gray-color;
+            &:not(:last-child) {
+                margin-right: 12px;
+            }
+        }
+        .date-label {
+            margin-bottom: 14px;
+        }
+        .time-label {
+            > div {
+                &:not(:last-child) {
+                    margin-right: 93px;
+                }
+            }
+        }
+    }
+}
+.hr__right--label {
+    font: normal normal bold 20px/23px $Helvetica-Neue;
+    color: rgba($black-color, 0.5);
+    margin-bottom: 23px;
+}
+.hr-actions {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    @media #{$mobile} {
+        margin-top: 27px;
+    }
+    a {
+        flex: 0 0 188px;
+        max-width: 188px;
+        height: 49px;
+        border-radius: 10px;
+        color: $white-color;
+        font: normal normal bold 16px/18px $Helvetica-Neue;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &:not(:last-child) {
+            margin-right: 40px;
+            @media #{$mobile} {
+                margin-right: 0;
+            }
+        }
+        &:first-child, &:last-child {
+            @media #{$mobile} {
+                flex: 0 0 calc(50% - 6px);
+                max-width: calc(50% - 6px);
+            }
+        }
+        &:first-child {
+            @media #{$mobile} {
+                margin-right: 12px !important;
+                order: 1;
+            }
+        }
+        &:last-child {
+            @media #{$mobile} {
+                order: 2;
+            }
+        }
+        &:nth-child(2) {
+            @media #{$mobile} {
+                order: 3;
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-top: 31px;
+            }
+        }
+        &.hr-confirm-btn {
+            background-color: #1DC421;
+        }
+        &.hr-dark-btn {
+            background-color: $black-color;
+        }
+        &.hr-danger-btn {
+            background-color: #EB031E;
+        }
+    }
+}

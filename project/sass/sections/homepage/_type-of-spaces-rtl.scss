@@ -1,0 +1,17 @@
+
+.sub-categories {
+    &.in-right-side {
+        right: auto;
+        left: 15%;
+    }
+    &.in-left-side {
+        left: auto;
+        right: 15%;
+    }
+    > a {
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-left: 25px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+// Fonts
+@import "helpers/fonts-rtl";
+
+// Variables
+@import "helpers/variables";
+
+// Mixins
+@import "helpers/mixins";
+
+// Buttons
+@import "components/buttons-rtl";
+
+// Filter
+@import "components/filter-rtl";
+
+// Shared Style
+@import "helpers/shared-style-rtl";
+
+// Navbar RTL
+@import "layout/navbar-rtl";
+
+// Book service RTL
+@import "pages/book-service-rtl";
+
+// Homepage
+@import "pages/homepage-rtl";
+
+// Book service RTL
+@import "pages/book-service-rtl"; // book service first page RTL
+@import "pages/book-services-page-rtl"; // book services main page RTL
+@import "pages/services-profile-rtl"; // Services Profile Page RTL
+@import "pages/payment-rtl"; // Payment Page RTL
+@import "pages/book-hall-rtl"; // Book Hall Page RTL
+@import "pages/hall-profile-rtl"; // Hall Profile Page RTL
+@import "pages/type-of-services-rtl"; // Type of services RTL
+@import "pages/hall-request-rtl"; // Hall request RTL
+@import "pages/signup-rtl"; // Signup RTL
+@import "pages/signin-rtl"; // Signin RTL
+@import "pages/bill-book-hall-rtl"; //Bill book hall RTL

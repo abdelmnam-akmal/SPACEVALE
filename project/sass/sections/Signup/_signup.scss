@@ -1,0 +1,106 @@
+body {
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+}
+
+.signup {
+    margin: 0px 0px 50px;
+    text-align: left;
+
+    h2 {
+        font: normal normal bold 20px/23px $Helvetica-Neue;
+        letter-spacing: 0px;
+        color: rgba(0, 0, 0, 0.52);
+        text-transform: capitalize;
+    }
+
+    .form {
+        margin: 50px 110px 0px 0;
+        position: relative;
+
+        @media #{$mobile} {
+            margin: 50px 0px 0px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -62%;
+            left: -100%;
+            width: 180%;
+            aspect-ratio: auto 1/1;
+            background: $light-white-color 0% 0% no-repeat padding-box;
+            border: 15px solid $main-color;
+            border-radius: 50%;
+            z-index: -1;
+
+            @media #{$mobile} {
+                display: none;
+            }
+        }
+
+        input {
+            margin: 40px 0 0;
+            display: block;
+            width: 100%;
+            font: normal normal bold 20px/23px $Helvetica-Neue;
+            background: $white-color 0% 0% no-repeat padding-box;
+            border-radius: 12px;
+            letter-spacing: 0px;
+            padding: 20px 25px;
+            color: rgba(0, 0, 0, 0.52);
+            text-transform: capitalize;
+            border: none;
+        }
+
+        input[type="button"] {
+            background: $main-color 0% 0% no-repeat padding-box;
+            text-align: center;
+            letter-spacing: 0px;
+            color: $light-white-color;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+    }
+
+    .social_signup {
+        margin: 50px 0 0 110px;
+        position: relative;
+
+        @media #{$mobile} {
+            margin: 50px 0px 0px;
+        }
+
+        a {
+            margin: 40px 0 0;
+            display: block;
+            text-transform: capitalize;
+            ;
+            font: normal normal bold 20px/23px $Helvetica-Neue;
+            border-radius: 12px;
+            letter-spacing: px;
+            padding: 20px 0px;
+            text-decoration: none;
+
+            img {
+                margin-left: 30px;
+                margin-right: 35px;
+            }
+
+            &.facebook {
+                background: #295FB4 0% 0% no-repeat padding-box;
+                color: $light-white-color;
+            }
+
+            &.google {
+                background: $white-color 0% 0% no-repeat padding-box;
+                color: rgba(226, 14, 128, 0.52);
+            }
+
+            &.apple {
+                background: $black-color 0% 0% no-repeat padding-box;
+                color: $light-white-color;
+                margin: 40px 0 50px;
+            }
+        }
+    }
+}

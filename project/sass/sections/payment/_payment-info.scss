@@ -1,0 +1,181 @@
+.payment-container {
+    padding-top: 50px;
+    background-color: $light-white-color;
+    min-height: 100vh;
+    @media #{$maxSmall} {
+        padding-top: 30px;
+    }
+    .payment-info {
+        display: flex;
+        justify-content: space-between;
+        @media #{$maxSmall} {
+            flex-direction: column-reverse;
+        }
+        .form-payment {
+            @media #{$maxSmall} {
+                padding-left: 20px;
+                padding-bottom: 50px;
+            }
+            .date-time {
+                margin-bottom: 35px;
+                .h-date-time {
+                    margin-bottom: 19px;
+                }
+                input {
+                    @extend %border-none;
+                    width: 140px;
+                    height: 34px;
+                    border-radius: 4px;
+                    padding: 9px;
+                    color: rgba($light-gray-color, .5);
+                    &.input-date {
+                        margin-bottom: 19px;
+                        font-size: 12px;
+                    }
+                    &.input-time {
+                        margin-right: 19px;
+                    }
+                }
+            }
+            .payment-info-content {
+                margin-bottom: 50px;
+                .main-label {
+                    margin-bottom: 28px;
+                }
+                .form-group {
+                    label {
+                        color: $light-gray-color;
+                    }
+                }
+                .credit-card-pay {
+                    border: none;
+                    background-color: $light-white-color;
+                    width: 300px;
+                    border-bottom: 1px solid rgba($gray-color, .5);
+                    padding: 15px;
+                    font-size: 15px;
+                    &::placeholder {
+                        color: rgba($gray-color, .5);
+                    }
+                }
+                div {
+                    max-width: 300px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .cvv {
+                        min-width: 145px;
+                        margin-left: 10px;
+                        position: relative;
+                        img {
+                            position: absolute;
+                            top: 50%;
+                            right: 10px;
+                            transform: translateY(-50%);
+                            width: 26.43px;
+                            max-width: 26.43px;
+                            max-height: 17.61px;
+                        }
+                    }
+                    .credit-card-pay {
+                        min-width: 145px;
+                        &:last-of-type {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .confirm {
+                width: 300px;
+                height: 50px;
+                border-radius: 10px;
+                border: 1px solid $main-color;
+                &.disapled {
+                    opacity: .5;
+                }
+                &.confirmed {
+                    background-color: #1DC421;
+                    border: 1px solid #1DC421;
+                    color: $white-color;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .bill-book {
+            padding: 20px;
+            min-width: 350px;
+            background-color: $white-color;
+            border-radius: 9px;
+            @media #{$maxSmall} {
+                margin-bottom: 40px;
+            }
+            .list-payment {
+                .list-units {
+                    margin-bottom: 14px;
+                    position: relative;
+                    .unit-title {
+                        margin-bottom: 12px;
+                        font-size: 16px;
+                        &.special-title {
+                            font: normal normal bold 20px/23px $Helvetica-Neue;
+                            opacity: 0.52;
+                        }
+                    }
+                    .unit-desc {
+                        border: 1px solid rgba($gray-color, .33);
+                        border-radius: 10px;
+                        padding: 13px 40px 13px 13px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        position: relative;
+                        .unit-text {
+                            color: $light-gray-color;
+                            margin-right: 10px;
+                        }
+                        .unit-number {
+                            opacity: .6;
+                            margin-right: 20px;
+                        }
+                        .cancle-btn {
+                            background: none;
+                            border: none;
+                            position: absolute;
+                            top: 50%;
+                            right: 15px;
+                            transform: translateY(-50%);
+                            cursor: pointer;
+                            padding: 0;
+                            min-width: 11px;
+                            min-height: 11px;
+                        }
+                        &.special-desc {
+                            span {
+                                opacity: .6;
+                            }
+                        }
+                    }
+                    &:not(:first-of-type) {
+                        margin-bottom: 30px;
+                    }
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .total-payment {
+                margin-top: 30px;
+                .unit-title {
+                    margin-bottom: 12px;
+                }
+                .total {
+                    background-color: #FEF3FB;
+                    border: 1px solid $main-color;
+                    border-radius: 10px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                }
+            }
+        }
+    }
+}

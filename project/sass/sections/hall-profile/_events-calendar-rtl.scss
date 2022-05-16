@@ -1,0 +1,48 @@
+.calendar-events {
+    right: auto;
+    left: 0;
+}
+.calendar-inner {
+    margin-left: 0;
+    margin-right: 200px;
+    float: right;
+}
+.event-container::before {
+    right: 57px;
+    left: auto;
+}
+.calendar-sidebar > .calendar-year {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > button:first-of-type {
+        order: 3;
+    }
+    > button:last-of-type {
+        order: 1;
+    }
+    > p {
+        order: 2;
+    }
+}
+.calendar-sidebar>span#sidebarToggler {
+    left: 0;
+    right: auto;
+    transform: translate(-100%,0);
+}
+#eventListToggler {
+    left: 0;
+    right: auto;
+}
+#eventListToggler button.icon-button>span.chevron-arrow-right {
+    transform: rotate(135deg);
+}
+.sidebar-hide .calendar-sidebar {
+    transform: translateX(100%);
+}
+.sidebar-hide .calendar-inner {
+    margin-right: 0;
+}
+.calendar-sidebar {
+    box-shadow: 2px 0 18px -3px #f5a4e3
+}

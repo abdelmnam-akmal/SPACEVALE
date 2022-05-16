@@ -1,0 +1,103 @@
+.signin.page-3 {
+    .signin_form {
+        h2 {
+            @media #{$mobile} {
+                margin-right: 0px;
+            }
+        }
+
+        .form-group {
+            &>div {
+                margin: 0px 20px 0px 0px;
+            }
+        }
+
+        .Select-The-Features {
+            & > div {
+                margin: 0px;
+            }
+            .form-check-inline {
+                .form-check-labe {
+                    margin: 10px 20px 10px 0px;
+
+                    @media #{$mobile} {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+
+        .Dividing-The-Hall {
+            label {
+                margin-left: 48px;
+                margin-right: 0px;
+
+                @media #{$mobile} {
+                    margin-right: 0px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .location {
+            &>div {
+                @media #{$mobile} {
+                    display: block;
+                }
+            }
+
+            textarea {
+                margin-right: 0px;
+                margin-left: 24px;
+
+                @media #{$mobile} {
+                    margin: 0px;
+                }
+            }
+        }
+
+        .add {
+            .custom-file-upload {
+                margin-right: 0px;
+                margin-left: 20px;
+
+                img.add {
+                    left: auto;
+                    right: 3px;
+                }
+
+                @media #{$mobile} {
+                    margin-right: 20px;
+                    margin-left: 0px;
+                }
+            }
+
+            .custom-file-upload.last {
+                margin-left: 0px;
+                margin-right: 20px;
+
+                img.add {
+                    left: auto;
+                    right: 37px;
+                }
+            }
+
+
+        }
+
+        a.next {
+            margin-left: 0px;
+            margin-right: 275px;
+
+            @media #{$mobile} {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            @media #{$ipadPro} {
+                margin-left: 0px;
+                margin-right: 100px;
+            }
+        }
+    }
+}

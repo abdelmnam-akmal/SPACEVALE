@@ -1,0 +1,80 @@
+.hall-package {
+    margin-top: 60px;
+}
+.hall-package,
+.avilable {
+    margin-bottom: 50px;
+    h5 {
+        margin-bottom: 19px;
+        @media #{$mobile} {
+            padding-left: 40px;
+        }
+        img {
+            margin-left: 15px;
+        }
+    }
+    .package-content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        @media #{$maxSmall} {
+            justify-content: center;
+            flex-direction: column;
+        }
+        .input-contain {
+            position: relative;
+            width: 260px;
+            height: 130px;
+            border-radius: 9px;
+            @media #{$maxSmall} {
+                margin-bottom: 20px;
+                height: 420px;
+            }
+            div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 260px;
+                height: 130px;
+                background-color: $white-color;
+                border-radius: 9px;
+                @extend %centering-items;
+                @media #{$maxSmall} {
+                    height: 420px;
+                }
+                .services-input {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    max-width: 260px;
+                    height: 130px;
+                    opacity: 0;
+                    border-radius: 9px;
+                    cursor: pointer;
+                    @media #{$maxSmall} {
+                        height: 420px;
+                    }
+                }
+                a {
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: 25px;
+                    top: 10px;
+                    img {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+        &.avilable-content {
+            justify-content: space-between;
+            margin-top: 40px;
+            .label-text {
+                font-size: 20px;
+                margin-bottom: 19px;
+            }
+        }
+    }
+}

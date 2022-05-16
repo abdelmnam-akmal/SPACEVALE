@@ -1,0 +1,60 @@
+.portfolio {
+    padding-top: 24px;
+    padding-bottom: 35px;
+    background-color: $white-color;
+    @media #{$mobile} {
+        background-color: $light-white-color;
+    }
+    .container {
+        position: relative;
+        .input-contain {
+            position: absolute;
+            bottom: 0;
+            right: 78px;
+            height: 321px;
+            max-width: 107px;
+            border-radius: 9px;
+            overflow: hidden;
+            z-index: 999;
+            @media #{$mobile} {
+                position: relative;
+                top: 0;
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+                background-color: $white-color;
+                max-width: 248px;
+            }
+            .services-input {
+                height: 100%;
+                max-width: 107px;
+                border-radius: 9px;
+                opacity: 0;
+                position: relative;
+                z-index: 3;
+                cursor: pointer;
+                @media #{$mobile} {
+                    max-width: 248px;
+                }
+            }
+            div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 107px;
+                height: 321px;
+                border-radius: 9px;
+                background-color: $light-white-color;
+                line-height: 321px;
+                @media #{$mobile} {
+                    background-color: $white-color;
+                    width: 248px;
+                }
+            }
+        }
+        .h-portfolio {
+            font-size: 20px;
+            margin-bottom: 35px;
+        }
+    }
+}

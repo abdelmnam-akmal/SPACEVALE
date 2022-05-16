@@ -1,0 +1,15 @@
+%border-none {
+    border: none;
+}
+%centering-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%centering-items-mobile {
+    @media #{$mobile} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
